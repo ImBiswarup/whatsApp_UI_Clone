@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.threedot {
+  overflow: hidden;
+  /* width: 100px; */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background: #8f8c8c;
+}
+
+/* Handle on hover  */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+  /* * Tooltip container */ */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  /* width: 5rem; */
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  /* padding: 5px 0; */
+  border-radius: 5px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
